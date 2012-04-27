@@ -7,7 +7,7 @@
 	    )
 	(if (null? tail)
 	    head
-	    (list (reverse tail) head)
+	    (cons (reverse (cdr list1)) head)
 	)
       )
   )
@@ -18,3 +18,4 @@
 
 (car (list (list 1 2) 3))
 (cdr (list (list 1 2) 3))
+
